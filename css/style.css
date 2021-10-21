@@ -1,0 +1,291 @@
+/**
+ * projekt: Flexbox tutorial
+ * fil: css/style.css
+ **/
+/* Google fonts (NB: load før :root) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap');
+
+/* font-family: 'Luckiest Guy', cursive; */
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --green: #cbd2ba;
+  --white: #cbd2ba;
+  /* fonte */
+  --font: 'Montserrat', sans-serif;
+  /* brødtekst */
+  --displayH: 'Montserrat', sans-serif;
+  /* overskrifter */
+  /* teksturer ("fliselagte baggrunde") */
+}
+
+/* Her bruges en variabel: --blue */
+/* Typografi */
+header {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 55px;
+  word-spacing: 95px;
+  /*fjerner bullets ved lister*/
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  display: inline;
+}
+
+/*  */
+#left-content {
+  float: left;
+}
+
+#right-content {
+  float: right;
+}
+
+#left-content, #right-content {
+  margin-top: 0px;
+  font-size: 25px;
+}
+
+#midt {
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-right: auto;
+}
+
+body {
+  background-color: var(--white);
+  font-family: var(--font);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/*forside billed*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*firkanter forside billed*/
+.box {
+  width: 100%;
+  height: auto;
+  opacity: 100%;
+  position: absolute;
+  top: 30%;
+  display: flex;
+}
+
+.SoMe {
+  width: 100%;
+  height: auto;
+  opacity: 100%;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  display: flex;
+  opacity: 90%;
+}
+
+/*VIDEN UNDERSIDE*/
+/*FORSIDE BILLED VIDEN*/
+.viden1 {
+  width: 100%;
+  height: auto;
+  opacity: 100%;
+  top: 15%;
+  display: flex;
+}
+
+.svamp {
+  width: 100%;
+  height: auto;
+  opacity: 100%;
+  top: 15%
+}
+
+/* viden undersider */
+.idstore {
+  display: block;
+  position: absolute;
+  text-align: left;
+  left: 15%;
+  top: 111%;
+  display: flex;
+}
+
+.idsma {
+  display: block;
+  position: absolute;
+  text-align: left;
+  left: 60%;
+  top: 111%;
+  display: flex;
+}
+
+/* artiker samt tast mekanisme*/
+.artikel {
+  display: block;
+  position: absolute;
+  text-align: left;
+  left: 60%;
+  top: 45%;
+  border-width: thin;
+  border-style: solid;
+  border-color: black;
+}
+
+.artikel:hover {
+  width: 425px;
+  height: 425px;
+  animation-name: none;
+  animation-duration: 4s;
+}
+
+.artikel2 {
+  display: block;
+  position: absolute;
+  text-align: left;
+  left: 10%;
+  top: 45%;
+  border-width: thin;
+  border-style: solid;
+  border-color: black;
+}
+
+.artikel2:hover {
+  width: 425px;
+  height: 425px;
+  animation-name: none;
+  animation-duration: 4s;
+}
+
+.artikel3 {
+  position: absolute;
+  text-align: left;
+  left: 10%;
+  top: 115%;
+  display: block;
+  border-width: thin;
+  border-style: solid;
+  border-color: black;
+}
+
+.artikel3:hover {
+  width: 425px;
+  height: 425px;
+  animation-name: none;
+  animation-duration: 4s;
+}
+
+.artikel4 {
+  width: auto;
+  height: auto;
+  position: absolute;
+  text-align: left;
+  left: 60%;
+  top: 115%;
+  display: block;
+  border-width: thin;
+  border-style: solid;
+  border-color: black;
+}
+
+.artikel4:hover {
+  width: 425px;
+  height: 425px;
+  animation-name: none;
+  animation-duration: 4s;
+}
+
+/* artiker POTTEPLANTER*/
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 180%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 150%;
+  font-style: oblique;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 1px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+h3 {
+  line-height: 1.5;
+}
+
+p {
+  line-height: 2;
+}
+
+/* artiker GØR EN FORSKEL*/
+h1 {
+  text-align: center;
+  margin-bottom: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 180%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 150%;
+  font-style: oblique;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 1px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+h3 {
+  line-height: 1.5;
+}
+
+p {
+  line-height: 2;
+}
+
+/*footer */
+.footer {
+  display: block;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  width: 100%;
+}
+
+.footer1 {
+  display: block;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  width: 100%;
+}
